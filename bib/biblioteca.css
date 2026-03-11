@@ -1,0 +1,67 @@
+#listaJogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.divCard{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    width: 20%;
+    border-radius: 25px;
+    position: relative;
+    padding: 200px 5px 5px 5px;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.divCard img{
+    position: absolute;
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto auto 20px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border-color: rgb(44, 44, 44);
+
+}
+
+.nome{
+    margin-bottom: 0;
+}
+
+.divNomeNota{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nota{
+    color: black;
+    font-size: 30px;
+    background-color: #00ce7a;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    transform: translateY(8px);
+}
+
+.divCard p{
+    margin: 0;
+}
+
+.data{
+    padding-bottom: 10px;
+}
+
+.miniSinopse{
+    padding-bottom: 20px;
+}
