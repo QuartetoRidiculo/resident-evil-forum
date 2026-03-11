@@ -20,6 +20,7 @@
     margin: auto;
     
     
+    
 }
 .h{
      padding: 20px;
@@ -29,6 +30,7 @@
     justify-content: center;
     color: rgb(255, 255, 255);
     margin: auto;
+    font-weight: 900;
     
 }
 
@@ -37,29 +39,54 @@
     justify-content: center;
     color: rgb(255, 0, 0);
     margin: auto;
+    font-weight: 900;
+    
 }
 
 .txt{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 550px;
     color: rgb(255, 255, 255);
     margin: auto;
 }
-.button{ 
+
+.buttondiv{
     display: flex;
     justify-content: center;
-    margin: auto;
     padding: 20px;
     gap: 20px;
-    
 }
+.button{ 
+    padding:5px;
+    background-color: rgba(255, 0, 0, 0.438);
+    border-radius: 16px;
+    color: white; 
+    transition-duration: 0.50s;
+}
+.button:hover{
+    background-color: #010000b0;
+    color: red;
+    cursor: pointer;
+}
+
+.dest{
+    color: red;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+.inconico{
+    color:white;
+    padding-left: 30px;
+    font-weight: bolder;
+    
+    }
 
 #posts{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    padding-top: 16px;
+    padding-bottom: 25px;
 }
 
 .card {
