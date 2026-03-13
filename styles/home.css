@@ -2,14 +2,13 @@
  background-image: url(../images/paper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .contexto{
     padding: 20px;
 }
 
-.p{
+.p {
     display: flex;
     justify-content: center;
     width: 300px;
@@ -18,8 +17,6 @@
     color: rgb(255, 0, 0);
     border-radius: 15px;
     margin: auto;
-    
-    
 }
 .h{
      padding: 20px;

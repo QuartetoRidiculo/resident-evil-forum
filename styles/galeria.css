@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+}
+
+#galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 0;
+  min-height: calc(100vh - 149px);
+}
+
+.text {
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+
+.text span {
+    color: red;
+    font-size: 14px;
+}
+
+.text h1 {
+    color: white;
+    padding-block: 8px;
+}
+
+.text p {
+    color: gray;
+}
+
+.card {
+  position: relative;
+  background-color: black;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  cursor: pointer;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  color: white;
+  position: absolute;
+  bottom: 40px;
+  left: 16px;
+}
+
+.card span {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: red;
+}

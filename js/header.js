@@ -2,9 +2,7 @@ const links = [
   { name: "Home", href: "index.html" },
   { name: "Biblioteca", href: "biblioteca.html" },
   { name: "Personagens", href: "personagens.html" },
-  { name: "Cronologia", href: "cronologia.html" },
   { name: "Galeria", href: "galeria.html" },
-  { name: "Sobre", href: "sobre.html" },
 ];
 
 const header = document.getElementById("header");
