@@ -1,15 +1,15 @@
-#home{
- background-image: url(../images/paper.jpg);
+#home {
+    background-image: url(../images/paper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
-.contexto{
+.contexto {
     padding: 20px;
 }
 
-.p{
+.p {
     display: flex;
     justify-content: center;
     width: 300px;
@@ -18,48 +18,82 @@
     color: rgb(255, 0, 0);
     border-radius: 15px;
     margin: auto;
-    
-    
+
+
+
 }
-.h{
-     padding: 20px;
+
+.h {
+    padding: 20px;
 }
-.h1{
+
+.h1 {
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
     margin: auto;
-    
+    font-weight: 900;
+
 }
 
-.h11{
+.h11 {
     display: flex;
     justify-content: center;
     color: rgb(255, 0, 0);
     margin: auto;
+    font-weight: 900;
+
 }
 
-.txt{
-    display: flex;
-    justify-content: center;
+.txt {
+    text-align: center;
     width: 550px;
     color: rgb(255, 255, 255);
     margin: auto;
 }
-.button{ 
+
+.buttondiv {
     display: flex;
     justify-content: center;
-    margin: auto;
     padding: 20px;
     gap: 20px;
-    
 }
 
-#posts{
+.button {
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.438);
+    border-radius: 16px;
+    color: white;
+    width: 200px;
+    height: 42px;
+    transition-duration: 0.50s;
+}
+
+.button:hover {
+    background-color: #010000b0;
+    color: red;
+    cursor: pointer;
+}
+
+.dest {
+    color: red;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+.inconico {
+    color: white;
+    padding-left: 30px;
+    font-weight: bolder;
+
+}
+
+#posts {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    padding-top: 16px;
+    padding-bottom: 25px;
 }
 
 .card {
@@ -68,11 +102,13 @@
     height: 200px;
     border-radius: 16px;
 }
-.cardtxt{
+
+.cardtxt {
     padding: 10px;
     color: aliceblue;
 }
-.cardtxt p{
+
+.cardtxt p {
     font-size: 13px;
 
 }
