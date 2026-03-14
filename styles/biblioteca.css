@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#background{
+    position: relative;
+    background-color: black;
+    width: 100%;
+}
+
+.text {
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+
+.text span {
+    color: red;
+    font-size: 14px;
+}
+
+.text h1 {
+    color: white;
+    padding-block: 8px;
+}
+
+.text p {
+    color: gray;
+}
+
+#listaJogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.divCard{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    width: 20%;
+    border-radius: 25px;
+    position: relative;
+    padding: 200px 5px 5px 5px;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.divCard img{
+    position: absolute;
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto auto 20px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border-color: rgb(44, 44, 44);
+
+}
+
+.nome{
+    margin-bottom: 0;
+}
+
+.divNomeNota{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.nota{
+    color: black;
+    font-size: 30px;
+    background-color: #00ce7a;
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    transform: translateY(8px);
+}
+
+.divCard p{
+    margin: 0;
+}
+
+.data{
+    padding-bottom: 10px;
+}
+
+.miniSinopse{
+    padding-bottom: 20px;
+}
+
+.contModal{
+    position: absolute;
+    background-color: black;
+    width: 900px;
+    height: 700px;
+    border-radius: 8px;
+    
+}
+
+.modalImg{
+    width: 900px;
+    height: 250px;
+    mask-image: linear-gradient(to bottom,black,transparent);
+    border-radius: 8px;
+}
+
+.divModal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.227);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalNome{
+    flex-grow: 1;
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    font-size: 32px;
+}
+
+.modalNomeNota{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 20px 0px 20px;
+    gap: 10px;
+}
+
+.modal img{
+
+    width: 100px;
+
+}
+
+.modalData{
+    color: white;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.modalTextos{
+    color: white;
+
+    margin-bottom: 50px;
+}
+
+.logoM{
+   width: 64px;
+   margin-top: 15px;
+}
+
+.modalSinopse{
+    color: white;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: 10px;
+    font-size: 24px;
+    white-space: pre-line;
+}
