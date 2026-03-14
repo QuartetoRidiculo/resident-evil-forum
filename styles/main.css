@@ -1,12 +1,31 @@
+:root {
+  --bg-main: #050505;
+  --bg-secondary: #0B1A14;
+  --card: #1A1A1A;
+
+  --accent: #C1121F;
+  --accent-hover: #FF2A2A;
+  --accent-toxic: #2A7A4B;
+
+  --text-main: #F5F5F5;
+  --text-muted: #7A7A7A;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
+body {
+  background-image: url(../images/paper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
   padding: 16px 0;
-  background-color: black;
+  background-color: var(--bg-main);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,18 +40,18 @@
 
 .ul li a {
     padding: 4px;
-  color: lightgray;
+  color: var(--text-muted);
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .ul li a:hover {
-  color: red;
-  background-color: rgba(255, 0, 0, 0.2);
+  color: var(--accent);
+  background-color: #c1121e5e;
   border-radius: 4px;
 }
 
 .img {
-  width: 200px;
+  width: 150px;
 }

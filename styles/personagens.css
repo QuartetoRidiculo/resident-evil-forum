@@ -1,5 +1,14 @@
-body {
-    background-color: rgb(24, 23, 23);
+:root {
+  --bg-main: #050505;
+  --bg-secondary: #0B1A14;
+  --card: #1A1A1A;
+
+  --accent: #C1121F;
+  --accent-hover: #FF2A2A;
+  --accent-toxic: #2A7A4B;
+
+  --text-main: #F5F5F5;
+  --text-muted: #7A7A7A;
 }
 
 .card {
@@ -15,20 +24,20 @@ body {
 }
 
 #barra {
-    padding: 25px;
-    color: rgb(246, 246, 246);
+    padding: 16px 0 0 32px;
+    color: var(--text-main);
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 #barra span {
-    color: rgb(214, 0, 0);
+    color: var(--accent);
 
 }
 
 #barra p {
-color: rgb(156, 156, 156);
+color: var(--text-muted);
 
 }
 
@@ -39,6 +48,7 @@ color: rgb(156, 156, 156);
     gap: 16px;
     justify-content: center;
     align-items: center;
+    padding-block: 32px;
 }
 
 .card img {
@@ -58,14 +68,14 @@ color: rgb(156, 156, 156);
 }
 
 .card h4 {
-    color: rgb(246, 246, 246);
+    color: var(--text-main);
 }
 
 .card h5 {
-    color: rgb(191, 10, 10);
+    color: var(--accent);
 }
 
 .card h6 {
-    color: rgb(156, 156, 156);
+    color: var(--text-muted);
     gap: 5px;
 }
