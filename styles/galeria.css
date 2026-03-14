@@ -1,0 +1,76 @@
+:root {
+  --bg-main: #050505;
+  --bg-secondary: #0B1A14;
+  --card: #1A1A1A;
+
+  --accent: #C1121F;
+  --accent-hover: #FF2A2A;
+  --accent-toxic: #2A7A4B;
+
+  --text-main: #F5F5F5;
+  --text-muted: #7A7A7A;
+}
+
+#galeria {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 0;
+  min-height: calc(100vh - 149px);
+}
+
+.text {
+    padding-block: 16px;
+    padding-left: 32px;
+}
+
+.text span {
+    color: var(--accent);
+    font-size: 14px;
+}
+
+.text h1 {
+    color: var(--text-main);
+    padding-block: 8px;
+}
+
+.text p {
+    color: var(--text-muted);
+}
+
+.card {
+  position: relative;
+  background-color: var(--bg-main);
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  mask-image: linear-gradient(to bottom, black, transparent);
+  cursor: pointer; 
+  border-radius: 8px 8px 0 0;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  color: var(--text-main);
+  position: absolute;
+  bottom: 40px;
+  left: 16px;
+}
+
+.card span {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: var(--accent);
+}
