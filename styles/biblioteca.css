@@ -1,3 +1,16 @@
+:root {
+  --bg-main: #050505;
+  --bg-secondary: #0B1A14;
+  --card: #1A1A1A;
+
+  --accent: #C1121F;
+  --accent-hover: #FF2A2A;
+  --accent-toxic: #2A7A4B;
+
+  --text-main: #F5F5F5;
+  --text-muted: #7A7A7A;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,27 +18,25 @@
 
 #background{
     position: relative;
-    background-color: black;
-    width: 100%;
 }
 
 .text {
     padding-left: 32px;
-    padding-bottom: 32px;
+    padding-block: 16px;
 }
 
 .text span {
-    color: red;
+    color: var(--accent);
     font-size: 14px;
 }
 
 .text h1 {
-    color: white;
+    color: var(--text-main);
     padding-block: 8px;
 }
 
 .text p {
-    color: gray;
+    color: var(--text-muted);
 }
 
 #listaJogos{
@@ -38,7 +49,7 @@
 
 .divCard{
     background-color: rgb(44, 44, 44);
-    color: white;
+    color: var(--text-main);
     width: 20%;
     border-radius: 25px;
     position: relative;
@@ -58,7 +69,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
-    border-color: rgb(44, 44, 44);
+    border-color: var(--card);
 
 }
 
@@ -75,9 +86,9 @@
 }
 
 .nota{
-    color: black;
+    color: var(--bg-main);
     font-size: 30px;
-    background-color: #00ce7a;
+    background-color: var(--accent-toxic);
     padding: 8px;
     border-radius: 8px;
     display: inline-block;
@@ -98,7 +109,7 @@
 
 .contModal{
     position: absolute;
-    background-color: black;
+    background-color: var(--bg-main);
     width: 900px;
     height: 700px;
     border-radius: 8px;
@@ -120,7 +131,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.227);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -131,7 +142,7 @@
     flex-grow: 1;
     margin: 0;
     margin-top: 10px;
-    color: white;
+    color: var(--text-main);
     font-size: 32px;
 }
 
@@ -151,14 +162,14 @@
 }
 
 .modalData{
-    color: white;
+    color: var(--text-main);
     margin: 0;
     padding: 0 20px;
     margin-top: -20px;
 }
 
 .modalTextos{
-    color: white;
+    color: var(--text-main);
 
     margin-bottom: 50px;
 }
@@ -169,7 +180,7 @@
 }
 
 .modalSinopse{
-    color: white;
+    color: var(--text-main);
     margin: 0;
     padding: 0 20px;
     margin-top: 10px;
