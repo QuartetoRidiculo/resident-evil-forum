@@ -58,27 +58,42 @@ const personagens = [
 ];
 
 const cards = document.getElementById("cards");
+const input = document.getElementById("input");
 
-personagens.map((personagem) => {
-  const card = document.createElement("div");
-  card.className = "card";
+let personagensFiltrados = personagens;
 
-  const image = document.createElement("img");
-  image.src = personagem.imgUrl;
-  image.alt = personagem.nome;
+function render(personagens) {
+  cards.innerHTML = "";
 
-  const nome = document.createElement("h4");
-  nome.textContent = personagem.nome;
+  personagens.forEach((personagem) => {
+    const card = document.createElement("div");
+    card.className = "card";
 
-  const cargo = document.createElement("h5");
-  cargo.textContent = personagem.cargo;
+    const image = document.createElement("img");
+    image.src = personagem.imgUrl;
 
-  const sobre = document.createElement("h6");
-  sobre.textContent = personagem.sobre;
+    const nome = document.createElement("h4");
+    nome.textContent = personagem.nome;
 
-  card.appendChild(image);
-  card.appendChild(nome);
-  card.appendChild(cargo);
-  card.appendChild(sobre);
-  cards.appendChild(card);
+    const cargo = document.createElement("h5");
+    cargo.textContent = personagem.cargo;
+
+    const sobre = document.createElement("h6");
+    sobre.textContent = personagem.sobre;
+
+    card.append(image, nome, cargo, sobre);
+    cards.appendChild(card);
+  });
+}
+
+render(personagens);
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    personagensFiltrados = personagens.filter((p) =>
+      p.nome.toLowerCase().includes(input.value.toLowerCase()),
+    );
+
+    render(personagensFiltrados);
+  }
 });
