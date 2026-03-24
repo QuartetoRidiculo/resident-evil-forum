@@ -54,7 +54,7 @@ let listaJogos = [
     notaMetacritic: 91,
     miniSinopse:
       "Um vírus maligno toma conta dos residentes de Raccoon City em setembro de 1998, afundando a cidade no caos...",
-    imagemModal: "../images/reviews/resident_evil2/library_hero.jpg",
+    imagemModal: "../images/reviews/resident_evil2/re2.jpg",
     sinopse:
       "Um vírus maligno toma conta dos residentes de Raccoon City em setembro de 1998, afundando a cidade no caos. Leon S. Kennedy, um jovem policial em seu primeiro dia de trabalho, e Claire Redfield, que procura por seu irmão desaparecido, precisam lutar por suas vidas enquanto enfrentam hordas de mortos-vivos e monstros grotescos criados pelos experimentos da Umbrella Corporation.",
   },
